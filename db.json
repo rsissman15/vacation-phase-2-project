@@ -1,0 +1,21 @@
+{
+    "vacations":[
+        {
+            "id":1,
+            "country":"Italy",
+            "continent":"Europe",
+            "flights":"https://www.expedia.com/Destinations-In-Italy.d86.Flight-Destinations?regionId=86&langid=1033&semcid=US.MULTILOBF.GOOGLE.DL-c-EN.FLIGHT&semdtl=a1932305340.b146077530549.r1f2b1be53ccb85dd17dc2587e08c7a697b5e26adefb16283ef2ab3b5faaefc03f.g1kwd-300517986892.i1.d1582885391169.e1c.j19060351.k12380.f1.n1.l1g.h1e.m1&gclid=Cj0KCQjwgYSTBhDKARIsAB8KuksSWZayQNZzGWny_UshlHNdeVqqI1zpBupom7JHNkqdH2ZWexEIirUaAuyHEALw_wcB",
+            "cities":"Rome, Venice, Florence",
+            "activities":"Colosseum, Florence Duomo Santa Maria del Fiore, The Grand Canal in Venice"
+        },
+        {
+            "id":2,
+            "country":"Japan",
+            "continent":"Asia",
+            "flights":"https://www.expedia.com/Destinations-In-Japan.d89.Flight-Destinations",
+            "cities":"Tokyo, Kyoto, Osaka, Hiroshima",
+            "activities":"Mount Fuji, Imperial Tokyo, Historic Kyoto"
+
+        }
+    ]
+}
