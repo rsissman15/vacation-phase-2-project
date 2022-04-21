@@ -30,7 +30,7 @@ const NavBar =()=> {
                     <Button color="inherit" component={ Link } to="/"> Vacations</Button>
                 </Typography>
                 <Button color="inherit" component={Link} to ="/vacations">List Vacations</Button>
-                <Button color="inherit" component={Link} to ="/vacatios/new">Create Vacations</Button>
+                <Button color="inherit" component={Link} to ="/vacations/new">Create Vacations</Button>
 
             </Toolbar>
         </Container>
