@@ -1,9 +1,19 @@
 import React from 'react'
+import VacationCard from './VacationCard'
+import Card from '@material-ui/core/List';
 
-const ListVacations = () => {
+
+
+
+const ListVacations = ({vacations}) => {
+
+
+  const renderVacation=vacations.map(vacation=><VacationCard key={vacation.id} vacation={vacation}/>)
   return (
     <div>
-        <h1>List Vacations</h1>
+        <Card component="nav" aria-label="secondary mailbox folders">
+          {renderVacation}
+      </Card>
     </div>
   )
 }
