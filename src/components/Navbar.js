@@ -19,9 +19,10 @@ const useStyles = makeStyles((theme) => ({
   }
 }));
 const NavBar =()=> {
-  const classes = useStyles();
+    const classes = useStyles();
 
   return (
+ 
     <div className={classes.root}>
       <AppBar position="static">
          <Container>
@@ -31,7 +32,6 @@ const NavBar =()=> {
                 </Typography>
                 <Button color="inherit" component={Link} to ="/vacations">List Vacations</Button>
                 <Button color="inherit" component={Link} to ="/vacations/new">Create Vacations</Button>
-
             </Toolbar>
         </Container>
       </AppBar>
@@ -40,3 +40,5 @@ const NavBar =()=> {
 }
 
 export default NavBar
+
+
