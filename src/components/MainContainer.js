@@ -1,14 +1,15 @@
-import React, {useEffect,useState} from 'react'
+import React from 'react'
 import Search from './Search'
 import ListVacationsContainer from './Vacations/ListVacationsContainer'
-import NewVacation from './Vacations/NewVacationForm'
 
-const MainContainer = ({vacations,updateSort,updateFilter}) => {
+
+const MainContainer = ({vacations,updateSort,updateFilter,filter}) => {
   return (
     <div>
         <Search 
         updateSort={updateSort}
         updateFilter={updateFilter}
+        filter={filter}
         />
         <ListVacationsContainer vacations={vacations}/>  
     </div>

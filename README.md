@@ -1,4 +1,5 @@
 # Welcome to My Bucket List Vacation Site
+This application allows me to keep a running list of the vacations I want to go on. In order to keep it organized, I created a filter that allows me to sort the countires by continent and also sort the countries alphabetically. I also created a form that allows me to add a new vacation to the list.
 
 
 

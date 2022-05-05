@@ -9,7 +9,8 @@ import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 const App=()=> {
     const[vacations,setVacations]=useState([])
     const[sortVacations,setSortVacations]=useState('')
-    const[filter,setFilter]=useState('All')    
+    const[filter,setFilter]=useState('All') 
+    
 
   useEffect(()=>{
 
@@ -77,6 +78,7 @@ const updateFilter=(vacation)=>{
         updateFilter={updateFilter}
         updateSort={updateSort}
         setSortVacations={setSortVacations} 
+        filter={filter}
         setFilter={setFilter}/>}/>
       </Routes>
       

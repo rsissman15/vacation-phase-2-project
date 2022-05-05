@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Search = ({updateSort,updateFilter}) => {
+const Search = ({updateSort,updateFilter,filter}) => {
   return (
     <>
-      <div>
+      <div style={{textAlign: "center"}}>
         <strong>Sort by:</strong>
           <label>
           <input
@@ -15,22 +15,27 @@ const Search = ({updateSort,updateFilter}) => {
           />
           Alphabetically
         </label>
+      
       </div>
 
+      <div style={{textAlign: "center"}}>
       <label>
-      <strong>Filter:</strong>
-      <select onChange={(e)=>updateFilter(e.target.value)}>
+      <strong>Filter Countires by Continent:</strong>
+      <select value={filter} onChange={(e)=>updateFilter(e.target.value)}>
         <option value="All">All</option>
         <option value="Africa">Africa</option>
         <option value="Antartica">Antartica</option>
         <option value="Asia">Asia</option>
-        <option value="Australia">Australia</option>
+        <option value="Oceania">Oceania</option>
         <option value="Europe">Europe</option>
         <option value="North America">North America</option>
         <option value="South America">South America</option>
       </select>
       </label>
     
+
+      </div>
+      
     </>
   )
 }
