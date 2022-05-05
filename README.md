@@ -8,8 +8,8 @@ This application allows me to keep a running list of the vacations I want to go 
 This project was built with the following:
 - [React](https://reactjs.org/)
 - [Semantic UI](https://react.semantic-ui.com/) (CSS)
-<br />
 
+<br />
 
 
 
