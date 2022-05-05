@@ -3,6 +3,7 @@ This application allows me to keep a running list of the vacations I want to go 
 
 
 <br />
+
 ## Built With
 This project was built with the following:
 - [React](https://reactjs.org/)
