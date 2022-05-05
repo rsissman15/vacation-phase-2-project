@@ -9,46 +9,55 @@ import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 
 
+
 const useStyles = makeStyles({
   root: {
-    maxWidth: 345,
+    width: 400,
+    paddingLeft:'100px',
+    paddingRight:'100px',
+    margin: "0 4px",
   },
   media: {
-    height: 200,
+    height: 300,
   },
+  
 });
 
 
 
 const VacationCard = ({vacation}) => {
+
+
   const classes = useStyles();
 
  
 
-  return (      
-    <Card className={classes.root}>
-    <CardActionArea>
-      <CardMedia
-        className={classes.media}
-        image={vacation.image}
-        title={vacation.country}
-      />
-      <CardContent>
-        <Typography gutterBottom variant="h3" component="h1">
-        {vacation.country}
-        </Typography>
-          <h2>Cities: {vacation.cities}</h2>
-          <p>Activities: {vacation.activities}</p>
-      </CardContent>
-    </CardActionArea>
-    <CardActions>
-      <Button size="small" color="primary">
-        <a href={vacation.flights}>Flights</a>
-      </Button>
-    </CardActions>
-  </Card>
-
+  return (   
+      <Card className={classes.root} border='5px solid red'>
+      <CardActionArea>
+        <CardMedia
+          className={classes.media}
+          image={vacation.image}
+          title={vacation.country}
+        />
+        <CardContent>
+          <Typography gutterBottom variant="h3" component="h1">
+          {vacation.country}
+          </Typography>
+            <h2>Cities: {vacation.cities}</h2>
+            <p>Activities: {vacation.activities}</p>
+        </CardContent>
+      </CardActionArea>
+      <CardActions>
+        <Button size="small" color="primary">
+          <a href={vacation.flights}>Flights</a>
+        </Button>
+      </CardActions>
+    </Card> 
+     
   )
 }
 
-export default VacationCard
+export default VacationCard;
+
+

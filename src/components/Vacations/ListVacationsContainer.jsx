@@ -1,19 +1,19 @@
-import React,{useState} from 'react'
+import React from 'react'
 import VacationCard from './VacationCard'
-import Card from '@material-ui/core/List';
-
-
+import Grid from '@mui/material/Grid';
 
 
 const ListVacations = ({vacations}) => {
 
   const renderVacation= vacations.map(vacation=><VacationCard key={vacation.id} vacation={vacation}/>)
 
+
+
   return (
     <div>
-        <Card component="nav" aria-label="secondary mailbox folders">
+      <Grid container>
           {renderVacation}
-      </Card>
+      </Grid>
     </div>
   )
 }
